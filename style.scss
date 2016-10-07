@@ -1,0 +1,41 @@
+@import 'reset';
+@import 'variables';
+
+body {
+  width: 100%;
+}
+
+.wrapper {
+  width: $wrapper-width;
+  margin: 200px auto 0;
+  border: solid $company-color 5px;
+}
+
+.card-container {
+  width: calc(100% - #{$container-margin});
+  margin: 5%;
+  background-color: $company-color;
+  .photo-container {
+    width: 40%;
+    .photo {
+      max-width: 100%;
+    }
+  }
+
+  .figure-caption {
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+    padding: 5% 0;
+    p {
+      color: white;
+    }
+  }
+}
+
+.align-boxes {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4%;
+}
